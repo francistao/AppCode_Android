@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/header_giving"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/lv_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="always">
+
+        <ListView
+            android:id="@+id/lv_give"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            >
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

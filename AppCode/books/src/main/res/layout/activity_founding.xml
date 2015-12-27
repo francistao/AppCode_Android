@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/header_founding"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_can_exchange_book"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:clickable="true">
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/img_can_exchange_book"
+            android:src="@mipmap/can_exchangebook"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:text="可换的书"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_food_good_book"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/img_food_good_book"
+            android:src="@mipmap/wantbook"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:text="发现好书"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:id="@+id/rl_donate_book">
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/img_donate_book"
+            android:src="@mipmap/donate_book"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:text="捐献书籍"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:id="@+id/rl_book_note">
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/img_book_note"
+            android:src="@mipmap/booknote"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:text="读书笔记"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+
+
+</LinearLayout>

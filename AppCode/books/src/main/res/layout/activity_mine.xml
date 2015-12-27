@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFFFFF"
+              android:orientation="vertical">
+    <include layout="@layout/header_mine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical">
+
+        <!-- 用户资料!-->
+        <ListView
+            android:id="@+id/lv_mine_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:dividerHeight="0.5dp"
+            android:divider="#88000000">
+        </ListView>
+
+        <!-- 寻书纪录 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="2dp"
+            android:text="寻书纪录"
+            android:textColor="@color/blue"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blue"/>
+
+        <ListView
+            android:id="@+id/lv_mine_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:dividerHeight="0.5dp"
+            android:divider="#88000000" >
+        </ListView>
+
+
+        <!-- 其他 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="2dp"
+            android:text="其他"
+            android:textColor="@color/blue"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blue"/>
+
+        <ListView
+            android:id="@+id/lv_mine_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:dividerHeight="0.5dp"
+            android:divider="#88000000">
+        </ListView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

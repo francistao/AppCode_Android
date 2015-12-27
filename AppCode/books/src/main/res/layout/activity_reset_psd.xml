@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_reset_psd" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="验证邮箱"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="12.0dp"
+        android:textSize="14sp"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/btn_send_email"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_radius_color_square"
+        android:text="找回密码"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_reset_psd_finished"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_reset_psd_finished"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="Finished"
+            android:src="@drawable/ic_reset_psd_finish" />
+
+        <TextView
+            android:id="@+id/tv_reset_psd_finished"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/img_reset_psd_finished"
+            android:text="验证邮件已发送，请尽快前往邮箱修改密码"
+            android:textColor="#C0C0C0"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_back_to_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/tv_reset_psd_finished"
+            android:background="@drawable/shape_radius_color_square"
+            android:text="密码已修改，重新登陆"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>
